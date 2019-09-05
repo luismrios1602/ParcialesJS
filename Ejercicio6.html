@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio6</title>
+</head>
+<body>
+    <script>
+        var num, may=0, men=0;
+
+        for (let i = 1; i <= 15; i++) {
+            num = parseFloat(prompt("Ingrese el "+i+"° número: "));
+            
+            if (num > 0) {
+                may++;
+            } else {
+                men++;
+            }
+        }
+
+        alert("La cantidad de números mayores que cero es: "+may);
+        alert("La cantidad de números menores que cero es: "+men);
+    </script>
+</body>
+</html>

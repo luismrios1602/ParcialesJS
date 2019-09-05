@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <script>
+        var nombre, sueldo, sexo, numMuj=0, numHom=0;
+
+        for (let i = 1; i <= 10; i++) {
+            alert("Ingrese los datos del "+i+"° empleado: ");
+            nombre = prompt("Nombre: ");
+            sueldo = parseFloat(prompt("Sueldo (En pesos mexicanos parece :'v): "));
+            sexo = prompt("Sexo:\n1. Femenino\n2. Masculino");
+
+            if (sexo == 1 && sueldo > 500){
+                numMuj++;
+            } else if (sexo == 2 && sueldo < 400) {
+                numHom++;
+            }
+        }
+
+        alert("La cantidad de mujeres que ganan más de $500 son: "+numMuj);
+        alert("La cantidad de hombres que ganan menos de $400 son: "+numHom);
+    </script>
+</body>
+</html>

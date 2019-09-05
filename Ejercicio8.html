@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <script>
+        var num;
+        num = parseInt(prompt("Ingrese el número del mes: "));
+        if (num == 2) {
+            alert("El mes 2 tiene 28 días o 29 días si este año es biciesto, saludos :v");
+        } else if (num == 1 || num == 3 || num == 5 || num == 7 || num == 8 || num == 10 || num == 12) {
+            alert("El mes "+num+" tiene: 31 días");
+        } else if (num == 4 || num == 6 || num == 9 || num == 11){
+            alert("El mes "+num+" tiene: 30 días");
+        } else {
+            alert("Ingrese un mes válido");
+        }
+    </script>
+</body>
+</html>

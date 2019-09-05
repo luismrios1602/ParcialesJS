@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <script>
+            var op, radio, b, altura, area=0;
+			
+			alert("Programa para calcular el área de diferentes figuras geometricas:\n"+
+            "------------------------------------------------------------------\n"+
+            "\nDigite 1 para el area del circulo\n"+
+            "Digite 2 para el area del rectangulo\n"+
+            "Digite 3 para el area del triangulo\n");
+			op = parseInt(prompt("Digite su opcion: "));
+			
+			if (op == 1) {
+				radio = parseFloat(prompt("Digite el radio del circulo: "));
+				area = Math.PI * Math.pow(radio,2);
+			} else if (op == 2) {
+				b = parseFloat(prompt("Digite la base del rectangulo: "));
+				altura = parseFloat(prompt("Digite la altura del rectangulo: "));
+				area = b * altura;
+			} else if (op == 3) {
+				b = parseFloat(prompt("Digite la base del triangulo: "));
+				altura = parseFloat(prompt("Digite la altura del triangulo: "));
+				area = (b * altura)/2;
+			} else {
+				alert("Digite una opción válida! ");
+			}	
+						
+			alert("El area es: "+area);
+    </script>
+</body>
+</html>

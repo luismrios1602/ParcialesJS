@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio9</title>
+</head>
+<body>
+    <script>
+        var descuento, porcen, valorTraje, totalPagar;
+
+        valorTraje = parseFloat(prompt("Ingrese el precio($) del traje: "));
+        if (valorTraje > 150000) {
+            porcen = 15; 
+            descuento = valorTraje * (porcen/100);
+        } else {
+            porcen = 8; 
+            descuento = valorTraje * (porcen/100);
+        }
+
+        totalPagar = valorTraje - descuento;
+        alert("Porcentaje descontado: "+porcen+"%\n"+
+            "Descuento: $"+descuento+"\n"+
+            "Total a pagar: $"+totalPagar+"\n");
+    </script>
+</body>
+</html>
